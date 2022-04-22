@@ -15,6 +15,7 @@ sleep 1
 read -p "Quel est votre nom? 
 " nom
 echo ""
+sleep 1
 
 num=$((num+1))
 bonnerep='f'
@@ -227,6 +228,50 @@ a) application
 b) transport
 c) réseau
 d) présentation
+" rep
+if [ $rep == $bonnerep ]
+then
+	score=$(($score+1))
+	echo "Bravo! Votre score est de $score/$num"
+else
+	echo "Oh non. La bonne réponse était: $bonnerep"
+	echo "Votre score est de $score/$num"
+	fi	
+echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
+read presskey
+
+num=$((num+1))
+bonnerep='d'
+echo "Question $num"
+echo ""
+sleep 1
+read -p "Une adresse IP privée:
+a) commence par 192.168.....
+b) est automatiquement attribuée lorsque le DHCP ne fonctionne pas
+c) est unique dans le WAN
+d) est unique dans le LAN 
+" rep
+if [ $rep == $bonnerep ]
+then
+	score=$(($score+1))
+	echo "Bravo! Votre score est de $score/$num"
+else
+	echo "Oh non. La bonne réponse était: $bonnerep"
+	echo "Votre score est de $score/$num"
+	fi	
+echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
+read presskey
+
+num=$((num+1))
+bonnerep='c'
+echo "Question $num"
+echo ""
+sleep 1
+read -p "Comment s'écrit 28 en binaire:
+a) 101000
+b) 100010
+c) 111000
+d) 110100
 " rep
 if [ $rep == $bonnerep ]
 then
@@ -488,7 +533,7 @@ read -p "Le switch est un appareil:
 a) Unicast
 b) Multicast
 c) Broadcast
-d) Aucune de ces réponses n’est vraie.
+d) Aucune de ces réponses n’est vraie
 " rep
 #echo "test: rep = $rep"
 #echo "test: bonnerep = $bonnerep"
@@ -1001,7 +1046,7 @@ echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
 read presskey
 
 num=$((num+1))
-bonnerep='d'
+bonnerep='c'
 echo "Question $num"
 echo ""
 sleep 1
@@ -1084,50 +1129,8 @@ else
 echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
 read presskey
 
-num=$((num+1))
-bonnerep='d'
-echo "Question $num"
-echo ""
-sleep 1
-read -p "Une adresse IP privée:
-a) commence par 192.168.....
-b) est automatiquement attribuée lorsque le DHCP ne fonctionne pas
-c) est unique dans le WAN
-d) est unique dans le LAN 
-" rep
-if [ $rep == $bonnerep ]
-then
-	score=$(($score+1))
-	echo "Bravo! Votre score est de $score/$num"
-else
-	echo "Oh non. La bonne réponse était: $bonnerep"
-	echo "Votre score est de $score/$num"
-	fi	
-echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
-read presskey
 
-num=$((num+1))
-bonnerep='d'
-echo "Question $num"
-echo ""
-sleep 1
-read -p "Une adresse IP privée:
-a) commence par 192.168.....
-b) est automatiquement attribuée lorsque le DHCP ne fonctionne pas
-c) est unique dans le WAN
-d) est unique dans le LAN 
-" rep
-if [ $rep == $bonnerep ]
-then
-	score=$(($score+1))
-	echo "Bravo! Votre score est de $score/$num"
-else
-	echo "Oh non. La bonne réponse était: $bonnerep"
-	echo "Votre score est de $score/$num"
-	fi	
-echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
-read presskey
-
+#######FIN DU QUIZZ##########
 
 echo "Bravo $nom tu as fini le quizz avec le score de $score/$num"
 read -p "Veux-tu sauvegarder ton résultat? (o/n)" rep
