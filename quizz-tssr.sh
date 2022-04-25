@@ -62,7 +62,7 @@ bonnerep='v'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "WPA est le standard actuel en matière de sécurité Wifi (v/f)
+read -p "WPA2 est le standard actuel en matière de sécurité Wifi (v/f)
 " rep
 if [ $rep == $bonnerep ]
 then
@@ -1143,7 +1143,7 @@ then
 	if [ ! -d "/var/backups/quizz" ]
 	then
         mkdir /var/backups/quizz
-        echo "Le répertoire 'quizz' a été créé dans /var/backups/"
+        echo "Le répertoire 'quizz' a été créé dans /var/backups/quizz"
 	fi
 echo "Score: $score/$num le `date +%d-%m-%Y` à `date +%T`" > /var/backups/quizz/resultat-$nom-`date +%d_%m_%Y_%T`.txt
 echo "Ton résultat a été sauvegardé sous le nom 'resultat-$nom-`date +%d_%m_%Y`.txt'"
