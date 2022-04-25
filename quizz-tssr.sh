@@ -135,7 +135,7 @@ bonnerep='bcd'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Quels sont les avantages de la fibre obtique (plusieurs réponses):
+read -p "Quels sont les avantages de la fibre optique (plusieurs réponses):
 a) mobilité
 b) sécurité
 c) portée
