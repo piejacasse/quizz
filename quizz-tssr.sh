@@ -677,7 +677,8 @@ bonnerep='v'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Un ordinateur peut avoir plusieurs adresses MAC (v/f)" rep
+read -p "Un ordinateur peut avoir plusieurs adresses MAC (v/f)
+" rep
 #echo "test: rep = $rep"
 #echo "test: bonnerep = $bonnerep"
 if [ $rep == $bonnerep ]
@@ -768,7 +769,8 @@ bonnerep='v'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Plus le masque de sous-réseau est grand, moins il y a d'IP attribuables dans le réseau (v/f)" rep
+read -p "Plus le masque de sous-réseau est grand, moins il y a d'IP attribuables dans le réseau (v/f)
+" rep
 #echo "test: rep = $rep"
 #echo "test: bonnerep = $bonnerep"
 if [ $rep == $bonnerep ]
@@ -859,7 +861,8 @@ bonnerep='f'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Le RAID 5 permet d'avoir une sauvegarde grâce à la parité (v/f)" rep
+read -p "Le RAID 5 permet d'avoir une sauvegarde grâce à la parité (v/f)
+" rep
 #echo "test: rep = $rep"
 #echo "test: bonnerep = $bonnerep"
 if [ $rep == $bonnerep ]
@@ -926,7 +929,8 @@ bonnerep='f'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "GRUB est le nom donné à la partition de démarrage sous Linux (v/f)" rep
+read -p "GRUB est le nom donné à la partition de démarrage sous Linux (v/f)
+" rep
 #echo "test: rep = $rep"
 #echo "test: bonnerep = $bonnerep"
 if [ $rep == $bonnerep ]
@@ -971,7 +975,8 @@ bonnerep='f'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "L'adresse d'une passerelle se termine soit .254, soit par .1 (v/f)" rep
+read -p "L'adresse d'une passerelle se termine soit .254, soit par .1 (v/f)
+" rep
 if [ $rep == $bonnerep ]
 then
 	score=$(($score+1))
