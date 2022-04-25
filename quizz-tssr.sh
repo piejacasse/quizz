@@ -94,11 +94,15 @@ echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
 read presskey
 
 num=$((num+1))
-bonnerep='v'
+bonnerep='b'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Une DMZ est moins sécurisée que le reste du réseau (v/f)
+read -p "Que signifie APT?
+a) Acknowledge Packet Transfert
+b) Advanced Packaging Tool
+c) Advanced Package Table
+d) Aptitude
 " rep
 if [ $rep == $bonnerep ]
 then
@@ -153,15 +157,15 @@ echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
 read presskey
 
 num=$((num+1))
-bonnerep='a'
+bonnerep='abd'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Quel est l'avantage du Wifi?
-a) mobilité
-b) sécurité
-c) portée
-d) résistance aux perturbations électromagnétiques
+read -p "Quels sont les désavantages du Wifi?
+a) portée
+b) résistance aux perturbations électromagnétiques
+c) mobilité
+d) sécurité
 " rep
 if [ $rep == $bonnerep ]
 then
@@ -268,10 +272,10 @@ echo "Question $num"
 echo ""
 sleep 1
 read -p "Comment s'écrit 28 en binaire:
-a) 101000
-b) 100010
-c) 111000
-d) 110100
+a) 10100
+b) 10001
+c) 11100
+d) 11010
 " rep
 if [ $rep == $bonnerep ]
 then
@@ -597,11 +601,11 @@ echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
 read presskey
 
 num=$((num+1))
-bonnerep='b'
+bonnerep='c'
 echo "Question $num"
 echo ""
 sleep 1
-read -p "Cherchez l'intrus: lequel n'est pas un protocole de routage
+read -p "Lequel est un protocole à état de liens:
 a) EIGRP
 b) SNMP
 c) OSPF
@@ -621,7 +625,7 @@ echo -e "Prêt pour la prochaine question? Appuyez sur entrer"
 read presskey
 
 num=$((num+1))
-bonnerep='b'
+bonnerep='d'
 echo "Question $num"
 echo ""
 sleep 1
@@ -1051,10 +1055,10 @@ echo "Question $num"
 echo ""
 sleep 1
 read -p "Un câble RJ45 contient:
-a) 2 câbles
-b) 4 câbles
-c) 8 câbles
-d) 16 câbles
+a) 2 broches
+b) 4 broches
+c) 8 broches
+d) 16 broches
 " rep
 if [ $rep == $bonnerep ]
 then
@@ -1073,10 +1077,10 @@ echo "Question $num"
 echo ""
 sleep 1
 read -p "Comment désactiver le site web par défaut sur un serveur Apache?
-a) rm 000-default.conf
+a) disable default-site.apache
 b) a2ensite 000-default.conf
 c) a2dissite 000-default.conf
-d) disable default-site.apache2
+d) rm 000-default.conf
 " rep
 if [ $rep == $bonnerep ]
 then
